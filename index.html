@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stone Scissor Paper Game</title>
+  <!-- Include Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <h1>Stone Paper Scissor Game</h1>
+  </nav>
+
+  <div class="buttons-container">
+    <button id="stoneBtn"><i class="fas fa-hand-rock"></i> Stone</button>
+    <button id="scissorBtn"><i class="fas fa-hand-scissors"></i> Scissors</button>
+    <button id="paperBtn"><i class="fas fa-hand-paper"></i> Paper</button>
+  </div>
+
+  <div class="game-info">
+    <div class="scoreboard">Score: <span id="score">0</span></div>
+    <div class="choice">Player Choice: <span id="playerChoice">None</span></div>
+    <div class="choice">Computer Choice: <span id="computerChoice">None</span></div>
+  </div>
+
+  <div class="result" id="gameResult"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; created by pratiksha singh.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"> </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stone scissor paper</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>STONE PAPER SCISSOR PAPER Game</h1><br>
+  <button onclick="
+  console.log('you have choosen stone');
+  let randomNumber =Math.random()*3;
+  if (randomNumber>0 && randomNumber<=1){
+    computerChoice='stone';
+    count=count;
+  }else if(randomNumber>1 && randomNumber<=2){
+    computerChoice='scissor';
+    count+=1;
+  }else{
+    computerChoice='paper';
+    count=count-1;
+  }
+
+  console.log(`computer choice is ${computerChoice}`)
+  alert(`your score = ${count}`);
+  if(count==3){
+      alert('congtrats you win');
+    }else if(count==-3){
+      alert('oops! you loose, computer win');
+    }
+  ">stone</button>
+
+  <button onclick="
+  console.log('you have choosen scissor');
+  let randomNumber1 =Math.random()*3;
+  if (randomNumber1>0 && randomNumber1<=1){
+    computerChoice='stone';
+    count=count-1
+  }else if(randomNumber1>1 && randomNumber1<=2){
+    computerChoice='scissor';
+    count=count;
+  }else{
+    computerChoice='paper';
+    count=count+1;
+  }
+
+  console.log(`computer choice is ${computerChoice}`);
+  alert(`your score = ${count}`);
+  if(count==3){
+      alert('congtrats you win');
+    }else if(count==-3){
+      alert('oops! you loose, computer win');
+    }
+  ">scissor</button>
+
+  <button onclick="
+  console.log('you have choosen paper');
+  let randomNumber3 =Math.random()*3;
+  if (randomNumber3>0 && randomNumber3<=1){
+    computerChoice='stone';
+    count=count+1;
+  }else if(randomNumber3>1 && randomNumber3<=2){
+    computerChoice='scissor';
+    count=count-1;
+  }else{
+    computerChoice='paper';
+    count=count;
+  }
+
+  console.log(`computer choice is ${computerChoice}`);
+  alert(`your score = ${count}`);
+  if(count==3){
+      alert('congtrats you win');
+    }else if(count==-3){
+      alert('oops! you loose, computer win');
+    }
+  ">paper</button>
+
+  <script>
+    let computerChoice;
+    let count=0;
+    // if(count==3){
+    //   alert('congtrats you win');
+    // }else if(count==-3){
+    //   alert('oops! youse loose, computer win');
+    // }
+    //console.log(count);
+  </script>
+</body>
+</html> -->

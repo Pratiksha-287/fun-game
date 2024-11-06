@@ -7,6 +7,15 @@ nav {
 nav h1 {
   font-size: 2em;color: rgb(58, 39, 42); margin: 0;font-weight: bold;letter-spacing: 2px;
 }
+.mode-selection {margin-top: 20px;}
+.friend-mode label,.friend-mode input {
+  display: block;margin: 5px;
+}
+.friend-mode button {padding: 10px 20px;font-size: 1em;background-color: #ff4e50;color: white;border: none;border-radius: 5px;cursor: pointer;transition: all 0.3s ease;
+}
+.friend-mode button:hover {
+  background-color: #ff7a6f;
+}
 .buttons-container {
   display: flex;justify-content: center; margin-top: 30px;gap: 20px; flex-wrap: wrap;
 }
@@ -17,7 +26,7 @@ nav h1 {
   background-color: #ff7a6f; transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 .game-info {
-  margin-top: 40px; padding: 20px; background-color: rgba(255, 182, 193, 0.8); color: #fff; border-radius: 10px; font-size: 1.2em; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px; padding: 20px; background-color: rgba(255, 182, 193, 0.8); color: #fff; border-radius: 20px; font-size: 1.2em; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   width: 80%; max-width: 500px;
 }
 .scoreboard {

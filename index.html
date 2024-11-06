@@ -9,6 +9,27 @@
 </head>
 <body>
   <nav><h1>Stone Paper Scissor Game</h1></nav>
+  <div class="mode-selection">
+    <label for="gameMode">Select Mode: </label>
+    <select id="gameMode">
+      <option value="computer">Play with Computer</option>
+      <option value="friend">Play with Friend</option>
+    </select>
+  </div>
+  
+  <div class="friend-mode" style="display: none;">
+    <label for="player1">Player 1 Name: </label>
+    <input type="text" id="player1" placeholder="Enter Player 1 Name">
+    <label for="player2">Player 2 Name: </label>
+    <input type="text" id="player2" placeholder="Enter Player 2 Name">
+    <button id="startFriendGame">Start Game</button>
+  </div>
+  
+  <div class="scoreboard">
+    <span id="player1Name">Player</span> Score: <span id="player1Score">0</span> |
+    <span id="player2Name">Computer</span> Score: <span id="player2Score">0</span>
+  </div>
+  
 
   <div class="buttons-container">
     <button id="stoneBtn"><i class="fas fa-hand-rock"></i> Stone</button>
@@ -17,7 +38,6 @@
   </div>
 
   <div class="game-info">
-    <div class="scoreboard">Score: <span id="score">0</span></div>
     <div class="choice">Player Choice: <span id="playerChoice">None</span></div>
     <div class="choice">Computer Choice: <span id="computerChoice">None</span></div>
   </div>

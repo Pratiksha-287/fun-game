@@ -41,6 +41,9 @@ nav h1 {
 .choice span {
   font-weight: bold;
 }
+#restartGame{
+  background-color: #fc877c;border-radius: 6px;
+}
 @media (max-width: 768px) {
   nav h1 {
     font-size: 2.2em;

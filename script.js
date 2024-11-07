@@ -75,6 +75,7 @@ function playRound(playerChoice) {
 document.getElementById('gameMode').addEventListener('change', function() {
 
   gameMode = this.value;
+
   if (gameMode === 'friend') {
     document.querySelector('.friend-mode').style.display = 'block';
     player1NameElement.innerText = document.getElementById('player1').value || 'Player 1';
@@ -101,6 +102,7 @@ document.getElementById('startFriendGame').addEventListener('click', function() 
     // Reset scores and update display
     player1Score = 0;
     player2Score = 0;
+
     updateScoreDisplay();
   }
 });
@@ -117,4 +119,17 @@ document.getElementById('player1').addEventListener('input', () => {
 });
 document.getElementById('player2').addEventListener('input', () => {
   player2NameElement.innerText = document.getElementById('player2').value || 'Player 2';
+});
+ 
+
+//restart game 
+
+document.getElementById('restartGame').addEventListener('click', function() {
+  player1Score = 0;
+  player2Score = 0;
+
+  updateScoreDisplay();
+  
+  document.getElementById('gameResult').innerText = '';
+  alert("Game has been restarted!");
 });
